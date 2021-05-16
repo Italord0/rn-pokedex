@@ -38,8 +38,8 @@ const styles = StyleSheet.create({
         height : 100,
     },
     name : {
-        marginVertical: 16,
-        paddingHorizontal : 8,
+        marginVertical: 4,
+        paddingHorizontal : 4,
         textAlign : 'center'
     }
 })

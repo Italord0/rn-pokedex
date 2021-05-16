@@ -12,7 +12,7 @@ export default function App() {
 
     async function fetchPokemons() {
         try {
-            const { data } = await api.get('pokemon?limit=152&offset=0');
+            const { data } = await api.get('pokemon?limit=151&offset=0');
 
             setPokemons(data.results)
 
@@ -42,7 +42,7 @@ export default function App() {
                     data={pokemons}
                     showsHorizontalScrollIndicator={false}
                     keyExtractor={(item) => String(item.name)}
-                    numColumns={3}
+                    numColumns={2}
                     renderItem={({ item , index }) => (<PokemonCard
                         data={item}
                         index = {index}
